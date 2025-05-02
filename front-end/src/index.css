@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+body{
+    background-image: url(./Imagens/ImgFundo.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+}
