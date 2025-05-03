@@ -27,6 +27,7 @@ function LogarSe() {
           <div className="linkL">
             <a href="index.html">ainda n é logado? </a>
             <button className="text-white w-9 h-9 border rounded-md ml-2 flex justify-center items-center text-9xl" type='submit'> <ChevronRight /></button>
+            <a href="DortFlex.html">a</a>
           </div>
         </form>
       </div>

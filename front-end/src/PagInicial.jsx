@@ -1,8 +1,13 @@
-import NavBar from "./components/NavBar.jsx"
+import NavBar from "./components/DortFlexH/NavBar.jsx"
+import Conteudo from "./components/DortFlexH/Conteudo.jsx"
 
 function PagInicial() {
  return(
-    <NavBar />
+   <div>
+       <NavBar />
+       <Conteudo />
+   </div>
+   
  )
 }
 
