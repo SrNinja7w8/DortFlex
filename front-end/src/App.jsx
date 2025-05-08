@@ -1,5 +1,5 @@
-import LogarSe from './components/LogarSe.jsx';
-import RegistrarSe from './components/RegistrarSe.jsx';
+import LogarSe from './components/Interfaces/LogarSe.jsx';
+import RegistrarSe from './components/Interfaces/RegistrarSe.jsx';
 function App() {
   let pagina = window.location.pathname
   if(pagina === '/index.html') {
@@ -15,7 +15,7 @@ function App() {
     }
     else {
       return (
-        <RegistrarSe />
+        <LogarSe />
       )
     }
   }
