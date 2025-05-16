@@ -20,18 +20,7 @@
 }
 
 
-.inpus {
-  height: 30px;
-  width: 350px;
-  font-size: 17px;
-  outline: none;
-  background-color: transparent;
-  border-bottom: solid white 1px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  color: white
-}
+
 
 .inpus::placeholder {
   color: white;

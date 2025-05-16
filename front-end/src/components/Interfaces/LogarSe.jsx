@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import { ChevronRight } from 'lucide-react'
 import axios from 'axios'
 function LogarSe() {
@@ -16,6 +17,10 @@ function LogarSe() {
           console.error("erro ai: ", err)
         })
   }
+  const [senh, setSenh] = useState()
+  function HandleChange() {
+    setSenh(document.querySelector('input[name=senha]').value)
+  }
 
     return(
     <div className="ConteinerInputs">
@@ -23,11 +28,10 @@ function LogarSe() {
       <div className="">
         <form className='inputs' action="" method="post" onSubmit={HandleSubmit}>
           <input type="text" className="inpus" name='nink' id='nink'placeholder="Digite seu usuario.." />
-          <input type="password" className="inpus" name='senha' placeholder="Digite sua senha.."/>
+          <input type="password" className={` outline-none h-8 w-80 bg-transparent border-b placeholder-white {senh "" ? 'border-red : border-black'}`} name='senha' onChange={HandleChange} placeholder="Digite sua senha.."/>
           <div className="linkL">
-            <a href="index.html">ainda n é logado? </a>
+            <a href="index.html">ainda n é logado?</a>
             <button className="text-white w-9 h-9 border rounded-md ml-2 flex justify-center items-center text-9xl" type='submit'> <ChevronRight /></button>
-            <a href="DortFlex.html">a</a>
           </div>
         </form>
       </div>
